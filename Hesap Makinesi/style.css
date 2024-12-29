@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+.calculator-display {
+    width: 100%;
+    height: 50px;
+    background: #eaeaea;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.button {
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button:hover {
+    background: #ddd;
+}
+.operator {
+    background: #ffa726;
+    color: white;
+}
+.equals {
+    background: #66bb6a;
+    color: white;
+    grid-column: span 2;
+}
+.clear {
+    background: #ef5350;
+    color: white;
+    grid-column: span 2;
+}
+#display{
+    padding: 4px;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f5;
+    color: #000;
+    transition: background-color 0.4s, color 0.4s;
+    -webkit-transition: background-color 0.4s, color 0.4s;
+    -moz-transition: background-color 0.4s, color 0.4s;
+    -ms-transition: background-color 0.4s, color 0.4s;
+    -o-transition: background-color 0.4s, color 0.4s;
+}
+
+body.dark-theme {
+    background-color: #303136; 
+    color: #fff; 
+}
+
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(145deg, #2a2b2f, #35363b);
+    box-shadow: 2px 2px 5px #bababa, -2px -2px 5px #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.theme-toggle i {
+    font-size: 20px;
+    color: #ff8c00; 
+    transition: color 0.3s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+.dark-theme .theme-toggle {
+    background: linear-gradient(145deg,#e0e0e0, #ffffff );
+    box-shadow: 2px 2px 5px #1e1f23, -2px -2px 5px #404248;
+}
+
+.dark-theme .theme-toggle i {
+    color: #f4f4f5; 
+}
